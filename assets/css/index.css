@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    background: #1A1888;
+}
+
+header .logo > img {
+    width: 65px;
+    height: 50px;
+    margin: 10px auto auto;
+}
+
+header .title {
+    flex: 1;
+    color: white;
+    margin: auto auto auto 30px;
+}
+
+footer {
+    position: relative;
+    width: 100vw;
+    height: 80px;
+    background: #1A1888;
+    bottom: 0;
+}
+
+footer hr{
+    width: 100vw;
+    height: 1px;
+    background: white;
+    border: none;
+}
+
+footer small > p {
+    width: max-content;
+    height: max-content;
+    color: white;
+    margin: 0 auto auto 30px;
+    text-align: center;
+    display: block;
+}
+
+footer .link {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+footer .link > a > img {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto auto;
+}
+
+main {
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+    background: url("../image/bg.jpg") no-repeat fixed center;
+}
+
+main>section {
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+}
+
+main>section section{
+    width: 100vw;
+    height: 100%;
+    border: 1px solid white;
+}
