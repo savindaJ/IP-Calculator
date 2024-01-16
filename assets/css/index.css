@@ -1,6 +1,6 @@
 header {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     background: #1A1888;
 }
@@ -19,14 +19,14 @@ header .title {
 
 footer {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background: #1A1888;
     bottom: 0;
 }
 
 footer hr{
-    width: 100vw;
+    width: 95vw;
     height: 1px;
     background: white;
     border: none;
@@ -56,21 +56,26 @@ footer .link > a > img {
 }
 
 main {
-    width: 100vw;
-    height: 85vh;
+    width: 100%;
+    height: 140vh;
     background-size: cover;
     background: url("../image/bg.jpg") no-repeat fixed center;
 }
 
-main>section {
-    width: 100vw;
+main>section:nth-child(1) {
+    width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.65);
     display: flex;
 }
 
+main>section:nth-child(2) {
+    position: relative;
+    top: -73vh;
+}
+
 main>section section{
+    margin-top: 30px;
     width: 100vw;
-    height: 100%;
-    border: 1px solid white;
+    height: 55%;
 }
