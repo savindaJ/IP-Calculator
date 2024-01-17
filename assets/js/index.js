@@ -37,6 +37,16 @@ let subnetMask = '';
 
 }
 
+function subnetDetail(subnetCount,ip){
+    const subnetHostCount = 255/subnetCount;
+
+    for (let i = 0; i < subnetCount; i++) {
+        
+    }
+
+
+}
+
 $('#btnProcess').on('click', function () {
     let ip = '130.168.1.2';
     let prefix = 21;
