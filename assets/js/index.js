@@ -37,11 +37,15 @@ let subnetMask = '';
 
 }
 
-function subnetDetail(subnetCount,ip){
+function subnetDetail(subnetCount, prefix){
     const subnetHostCount = 255/subnetCount;
 
-    for (let i = 0; i < subnetCount; i++) {
-        
+    let host = parseInt(subnetHostCount+'');
+
+    let broadcastAddress = '';
+
+    for (let i = 1; i <= subnetCount; i++) {
+
     }
 
 
@@ -70,5 +74,7 @@ $('#btnProcess').on('click', function () {
     console.log(numOfSubnets);
 
     console.log(findSubnetMask(prefix));
+
+    subnetDetail(2 ,prefix);
 
 });
